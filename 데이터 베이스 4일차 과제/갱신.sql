@@ -1,0 +1,26 @@
+-- (1) customers 테이블에서 특정 고객의 주소를 갱신하세요.
+-- SET SQL_SAFE_UPDATES = 0;
+-- update customers set addressLine1 = '동구 효목동', addressLine2 = '2층' where customerName = 'lahing';
+-- (2) products 테이블에서 특정 제품의 가격을 갱신하세요.
+-- update products set buyPrice = 50 where productName = '1969 Harley Davidson Ultimate Chopper';
+-- (3) employees 테이블에서 특정 직원의 직급을 갱신하세요.
+-- update employees set jobTitle = 'VP Marketing' where jobTitle = 'Sales Manager (APAC)';
+-- (4) offices 테이블에서 특정 사무실의 전화번호를 갱신하세요.
+-- update offices set phone = '+821012345678' where officeCode = 3;
+-- (5) orders 테이블에서 특정 주문의 상태를 갱신하세요.
+-- update orders set status = 'Shipped' where orderNumber = '10421';
+-- (6) orderdetails 테이블에서 특정 주문 상세의 수량을 갱신하세요.
+-- update orderdetails set quantityOrdered = 50 where productCode = 'S700_3505';
+-- (7) payments 테이블에서 특정 지불의 금액을 갱신하세요.
+-- update payments set amount = 7000 where checkNumber = 'HQ336336';
+-- (8) productlines 테이블에서 특정 제품 라인의 설명을 갱신하세요.
+-- update productlines set textDescription = "It is faster and smarter than any other car and it doesn't look out of place anywhere." where productLine = 'Classic Cars';
+-- (9) customers 테이블에서 특정 고객의 이메일을 갱신하세요.(이메일 컬럼이 없어서 폰을 바꿀게요)
+-- update customers set  phone = '+821023456789' where customerNumber = 129; 
+-- (10) products 테이블에서 여러 제품의 가격을 한 번에 갱신하세요.
+-- update products 
+-- set buyPrice = case productCode
+-- 	  when 'S18_1097' then 60
+--    when 'S18_1129' then 70
+--    else buyprice
+-- end

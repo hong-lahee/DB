@@ -1,0 +1,20 @@
+-- 테이블에서 모든 고객정보를 조회하세요
+-- select * from customers;
+-- 테이블에서 모든 제품 목록을 조회하세요
+-- select * from products;
+-- 테이블에서 모든 직원의 이름과 직급을 조회하세요
+-- select lastName,firstName,jobTitle from employees;
+-- 테이블에서 모든 사무실의 위치를 조회하세요
+-- select country,city,addressLine1,addressLine2 from offices;
+-- 테이블에서 최근 10개의 주문을 조회하세요
+-- select * from orders order by orderdate desc limit 10; 
+-- 테이블에서 특정고객의 모든 지불 정보를 조회하세요
+-- select * from orderdetails where orderNumber = 10100;
+-- 테이블에서 특정고객의 모든 상세 정보를 조회하세요
+-- select * from payments where customerNumber =363;
+-- 	테이블에서 각제품 라인의 설명을 조회하세요
+-- select textDescription from productlines;
+-- 테이블에서 특정지역의 고객을 조회하세요
+-- select * from customers where country = 'USA';
+-- 테이블에서 특정 가격 범위의 제품을 조회하세요
+-- select * from products where buyPrice between 30 and 40;
